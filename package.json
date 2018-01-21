@@ -1,0 +1,61 @@
+{
+    "author": "jvanlangen@live.nl",
+    "dependencies": {
+        "pebble-clay": "^1.0.3"
+    },
+    "keywords": [],
+    "name": "digitalclock",
+    "pebble": {
+        "displayName": "DigitalClock with week numbers",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "I"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "characterRegex": "[0-9BT%]",
+                    "file": "fonts/SMALLTEXT14",
+                    "name": "SMALLTEXT14",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9WEKBTMR:, \\-\\.]",
+                    "file": "fonts/WEEKFONT16",
+                    "name": "WEEKFONT16",
+                    "targetPlatforms": null,
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[JANURYFEBMCHPILGSTOVDWK,\\s0-9-]",
+                    "file": "fonts/TEXTFONT20",
+                    "name": "TEXTFONT20",
+                    "targetPlatforms": [
+                        "basalt"
+                    ],
+                    "type": "font"
+                },
+                {
+                    "characterRegex": "[0-9:]",
+                    "file": "fonts/TIMEFONT56",
+                    "name": "TIMEFONT56",
+                    "targetPlatforms": [
+                        "basalt"
+                    ],
+                    "type": "font"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "basalt"
+        ],
+        "uuid": "00d9739d-43ff-4857-b80f-aee45af93705",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "2.0.0"
+}
